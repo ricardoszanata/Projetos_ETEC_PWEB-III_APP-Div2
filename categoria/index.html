@@ -105,7 +105,7 @@
                     txt.classList.add('text-danger');
                     btn.onclick = function (event) {
                         event.preventDefault();
-                        fetch(`${apiUrl}dcategoria.php?jsn=${JSON.stringi({ id })}`)
+                        fetch(`${apiUrl}dcategoria.php?jsn=${JSON.stringify({ id })}`)
                             .then(response => response.text())
                             .then(() => {
                                 alert('Categoria Excluido!');
